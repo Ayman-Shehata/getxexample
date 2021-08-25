@@ -2,19 +2,22 @@
 
 Using Getx Example (constantly updated)
 - Routing
+- SnackBar
 
 
-![alt text](https://github.com/[Ayman-Shehata]/[getxexample]/blob/[Master]/image.jpg?raw=true)
+# MainScreen
+![Main screen](https://github.com/Ayman-Shehata/getxexample/blob/master/Screenshots/001.png?raw=true)
 
-## Getting Started
+# SnackBar
+![Main screen](https://github.com/Ayman-Shehata/getxexample/blob/master/Screenshots/002.png?raw=true)
 
-This project is a starting point for a Flutter application.
+# Get.offnamed
+![Main screen](https://github.com/Ayman-Shehata/getxexample/blob/master/Screenshots/003.png?raw=true)
 
-A few resources to get you started if this is your first Flutter project:
+# Define page's name (Screen name)
+![Main screen](https://github.com/Ayman-Shehata/getxexample/blob/master/Screenshots/004.png?raw=true)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+# Elevated Button (onTap => get.snackbar)
+![Main screen](https://github.com/Ayman-Shehata/getxexample/blob/master/Screenshots/004.png?raw=true)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Thanks
