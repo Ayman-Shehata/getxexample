@@ -15,9 +15,9 @@ Using Getx Example (constantly updated)
 ![Main screen](https://github.com/Ayman-Shehata/getxexample/blob/master/Screenshots/003.png?raw=true)
 
 # Define page's name (Screen name)
-![Main screen](https://github.com/Ayman-Shehata/getxexample/blob/master/Screenshots/004.png?raw=true)
+![Main screen](https://github.com/Ayman-Shehata/getxexample/blob/master/Screenshots/005.png?raw=true)
 
 # Elevated Button (onTap => get.snackbar)
-![Main screen](https://github.com/Ayman-Shehata/getxexample/blob/master/Screenshots/004.png?raw=true)
+![Main screen](https://github.com/Ayman-Shehata/getxexample/blob/master/Screenshots/006.png?raw=true)
 
 Thanks
