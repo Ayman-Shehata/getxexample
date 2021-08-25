@@ -14,7 +14,7 @@ class HomeScreen extends StatelessWidget {
       body: Center(
         child: TextButton(
           onPressed: () {
-            //لإلغاء جميع الشاشات السابقة
+            //Goto page with delete all previous screen
             Get.offAllNamed('details');
           },
           child: Text("Press Here"),

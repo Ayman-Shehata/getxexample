@@ -7,6 +7,7 @@ void main() => runApp(
       GetMaterialApp(
         home: Home(),
         theme: ThemeData(primarySwatch: Colors.blue),
+        // Define Application page
         getPages: [
           GetPage(
             name: "/first",
@@ -47,6 +48,7 @@ class _HomeState extends State<Home> {
           child: GestureDetector(
             child: Text("Center Text"),
             onTap: () {
+              // Go to home screen by Tap
               Get.to(HomeScreen());
             },
           ),
