@@ -9,15 +9,20 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Ayman"),
+        title: Text("Screen2"),
       ),
       body: Center(
-        child: TextButton(
+        child: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              primary: Colors.amber,
+              padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+              textStyle: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
           onPressed: () {
-            //Goto page with delete all previous screen
             Get.offAllNamed('details');
           },
-          child: Text("Press Here"),
+          child: Text(
+            "Screen#3 without back",
+          ),
         ),
       ),
     );

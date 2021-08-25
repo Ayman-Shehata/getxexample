@@ -7,6 +7,7 @@ void main() => runApp(
       GetMaterialApp(
         home: Home(),
         theme: ThemeData(primarySwatch: Colors.blue),
+        debugShowCheckedModeBanner: false,
         // Define Application page
         getPages: [
           GetPage(
@@ -38,20 +39,53 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("LogIN"),
-        backgroundColor: Colors.orangeAccent,
+        title: Text("GetX Example"),
+        backgroundColor: Colors.blue,
         centerTitle: true,
       ),
-      body: Container(
-        color: Colors.orange,
-        child: Center(
-          child: GestureDetector(
-            child: Text("Center Text"),
-            onTap: () {
-              // Go to home screen by Tap
-              Get.to(HomeScreen());
-            },
-          ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            // go to next screen
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.green,
+                  padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+                  textStyle:
+                      TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+              onPressed: () {
+                Get.to(HomeScreen());
+              },
+              child: Text(
+                "Screen#2",
+              ),
+            ),
+            SizedBox(
+              height: 12,
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                primary: Colors.blue,
+                padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+                textStyle: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              ),
+              onPressed: () {
+                Get.snackbar("title", "message",
+                    snackPosition: SnackPosition.BOTTOM,
+                    colorText: Colors.amberAccent,
+                    backgroundColor: Colors.black,
+                    borderWidth: 1,
+                    borderRadius: 20,
+                    mainButton:
+                        TextButton(onPressed: () {}, child: Text("Tap")));
+              },
+              child: Text(
+                "SnackBar",
+              ),
+            )
+          ],
         ),
       ),
     );

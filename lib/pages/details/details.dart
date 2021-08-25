@@ -13,26 +13,23 @@ class DetailsScreen extends StatelessWidget {
       ),
       body: Center(
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            GestureDetector(
-              child: Text("goto home"),
-              onTap: () {
-                Get.toNamed("myHome");
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.green,
+                  padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+                  textStyle:
+                      TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+              onPressed: () {
+                //Get.toNamed("myHome");
+                Get.offAllNamed("myHome");
               },
+              child: Text(
+                "Home Screen",
+              ),
             ),
-            GestureDetector(
-              child: Text("snackBar"),
-              onTap: () {
-                Get.snackbar("title", "message",
-                    snackPosition: SnackPosition.BOTTOM,
-                    colorText: Colors.amberAccent,
-                    backgroundColor: Colors.black,
-                    borderWidth: 1,
-                    borderRadius: 20,
-                    mainButton:
-                        TextButton(onPressed: () {}, child: Text("ayman")));
-              },
-            )
           ],
         ),
       ),
