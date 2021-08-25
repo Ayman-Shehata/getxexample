@@ -1,6 +1,7 @@
 # getxexample
 
-A new Flutter project.
+Using Getx Example (constantly updated)
+- Routing
 
 ## Getting Started
 
