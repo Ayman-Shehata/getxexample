@@ -22,7 +22,10 @@ void main() => runApp(
             name: "/myHome",
             page: () => Home(),
           ),
-          GetPage(name: "/Settings", page: () => HomeScreen()),
+          GetPage(
+            name: "/Settings",
+            page: () => HomeScreen(),
+          ),
         ],
       ),
     );
